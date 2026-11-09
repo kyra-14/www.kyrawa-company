@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Rizky Ramadhani - Siswa Teknik Elektronika SMK Tinta Emas Indonesia" />
+  <meta name="keywords" content="elektronika, IoT, Arduino, PCB, robotika, portfolio" />
+  <meta property="og:title" content="Rizky Ramadhani | Teknik Elektronika" />
+  <meta property="og:description" content="Portfolio Rizky Ramadhani - Siswa Teknik Elektronika" />
+  <meta property="og:url" content="https://kyrawa-company.my.id" />
+  <title>Rizky Ramadhani | Teknik Elektronika</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="circuit-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-microchip"></i>
+        <span>Teknik Elektronika</span>
+      </div>
+      <h1 class="hero-title">
+        Halo, saya <br/>
+        <span class="gradient-text typed-text" id="typedText"></span>
+      </h1>
+      <p class="hero-subtitle">
+        Siswa <strong>SMK Tinta Emas Indonesia</strong> yang passionate di bidang
+        <span class="highlight">IoT</span>, <span class="highlight">Arduino</span>,
+        <span class="highlight">Desain PCB</span> &amp; <span class="highlight">Robotika</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> Lihat Proyek
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Hubungi Saya
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/kyra-14" target="_blank" rel="noopener" class="social-pill" aria-label="GitHub">
+          <i class="fab fa-github"></i> kyra-14
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-pill" aria-label="Instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener" class="social-pill" aria-label="TikTok">
+          <i class="fab fa-tiktok"></i> TikTok
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-circle">
+          <i class="fas fa-user-astronaut avatar-icon"></i>
+        </div>
+        <div class="floating-badge badge-1"><i class="fas fa-microchip"></i> Arduino</div>
+        <div class="floating-badge badge-2"><i class="fas fa-wifi"></i> IoT</div>
+        <div class="floating-badge badge-3"><i class="fas fa-robot"></i> Robot</div>
+        <div class="floating-badge badge-4"><i class="fas fa-print"></i> PCB</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — About Me</span>
+        <h2 class="section-title">Tentang Saya</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-avatar">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <div class="about-text">
+            <p>
+              Saya adalah <strong>Rizky Ramadhani</strong>, seorang siswa Teknik Elektronika di
+              <strong>SMK Tinta Emas Indonesia</strong>. Saya memiliki ketertarikan besar pada
+              dunia elektronika, terutama dalam pengembangan sistem <strong>IoT</strong>,
+              pemrograman <strong>mikrokontroler Arduino</strong>, dan <strong>desain PCB</strong>.
+            </p>
+            <p>
+              Saya gemar bereksperimen dengan rangkaian elektronika, membangun prototipe,
+              dan menciptakan solusi teknologi yang dapat membantu kehidupan sehari-hari.
+              Robotika adalah passion saya — saya percaya teknologi adalah jembatan menuju
+              masa depan yang lebih baik.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Proyek</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Sertifikat</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Tahun Belajar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-info-cards">
+          <div class="info-card glass-card">
+            <i class="fas fa-school info-icon"></i>
+            <div>
+              <span class="info-label">Sekolah</span>
+              <span class="info-value">SMK Tinta Emas Indonesia</span>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fas fa-graduation-cap info-icon"></i>
+            <div>
+              <span class="info-label">Jurusan</span>
+              <span class="info-value">Teknik Elektronika</span>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fas fa-map-marker-alt info-icon"></i>
+            <div>
+              <span class="info-label">Lokasi</span>
+              <span class="info-value">Indonesia</span>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fas fa-globe info-icon"></i>
+            <div>
+              <span class="info-label">Website</span>
+              <span class="info-value">kyrawa-company.my.id</span>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fab fa-github info-icon"></i>
+            <div>
+              <span class="info-label">GitHub</span>
+              <span class="info-value">github.com/kyra-14</span>
+            </div>
+          </div>
+          <div class="info-card glass-card">
+            <i class="fas fa-heart info-icon" style="color: #ef4444"></i>
+            <div>
+              <span class="info-label">Passion</span>
+              <span class="info-value">IoT, Robotika, Elektronika</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Skills</span>
+        <h2 class="section-title">Keahlian Saya</h2>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-microchip"></i>
+            <h3>Hardware & Elektronika</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Desain PCB (KiCad / Proteus)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Simulasi Rangkaian (LTSpice)</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Elektronika Analog & Digital</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Pemrograman & Mikrokontroler</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Arduino (C/C++)</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>IoT (ESP8266/ESP32)</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Python (Raspberry Pi)</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <i class="fas fa-robot"></i>
+            <h3>Robotika & Otomasi</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Robotika (Line Follower, dll)</span>
+                <span class="skill-percent">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Sensor & Aktuator</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Sistem Kontrol</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Pills -->
+      <div class="tech-stack">
+        <h3 class="tech-stack-title">Tools & Teknologi</h3>
+        <div class="tech-pills">
+          <span class="tech-pill"><i class="fas fa-microchip"></i> Arduino</span>
+          <span class="tech-pill"><i class="fas fa-wifi"></i> ESP8266/ESP32</span>
+          <span class="tech-pill"><i class="fas fa-print"></i> KiCad</span>
+          <span class="tech-pill"><i class="fas fa-bolt"></i> Proteus</span>
+          <span class="tech-pill"><i class="fas fa-wave-square"></i> LTSpice</span>
+          <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
+          <span class="tech-pill"><i class="fas fa-robot"></i> Robotika</span>
+          <span class="tech-pill"><i class="fas fa-cloud"></i> MQTT</span>
+          <span class="tech-pill"><i class="fas fa-database"></i> Firebase</span>
+          <span class="tech-pill"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Projects</span>
+        <h2 class="section-title">Proyek Saya</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6)">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kyra-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Home Monitoring</h3>
+          <p class="project-desc">Sistem monitoring rumah pintar berbasis ESP32 yang dapat memantau suhu, kelembaban, dan keamanan rumah secara real-time melalui aplikasi mobile.</p>
+          <div class="project-tags">
+            <span>ESP32</span><span>IoT</span><span>Firebase</span><span>Arduino</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon" style="background: linear-gradient(135deg, #10b981, #059669)">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kyra-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Line Follower Robot</h3>
+          <p class="project-desc">Robot penjejak garis otomatis menggunakan sensor infrared array dan algoritma PID untuk navigasi akurat di lintasan lomba.</p>
+          <div class="project-tags">
+            <span>Arduino</span><span>Robotika</span><span>PID</span><span>Sensor IR</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706)">
+              <i class="fas fa-tint"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kyra-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Sistem Irigasi Otomatis</h3>
+          <p class="project-desc">Sistem penyiraman tanaman otomatis berbasis sensor kelembaban tanah dan ESP8266 dengan kontrol melalui aplikasi web.</p>
+          <div class="project-tags">
+            <span>ESP8266</span><span>IoT</span><span>MQTT</span><span>PCB Design</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626)">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kyra-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Monitor Detak Jantung</h3>
+          <p class="project-desc">Alat pemantau detak jantung portable menggunakan sensor MAX30102 dan display OLED dengan fitur notifikasi darurat via buzzer.</p>
+          <div class="project-tags">
+            <span>Arduino</span><span>Sensor</span><span>OLED</span><span>PCB</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb)">
+              <i class="fas fa-parking"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kyra-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Parking System</h3>
+          <p class="project-desc">Sistem parkir cerdas dengan sensor ultrasonik untuk deteksi ketersediaan slot parkir dan palang pintu otomatis berbasis Arduino.</p>
+          <div class="project-tags">
+            <span>Arduino</span><span>Ultrasonik</span><span>Servo</span><span>LCD</span>
+          </div>
+        </div>
+
+        <div class="project-card glass-card project-card-cta">
+          <div class="project-cta-content">
+            <i class="fab fa-github project-cta-icon"></i>
+            <h3>Lihat Semua Proyek</h3>
+            <p>Kunjungi GitHub saya untuk melihat semua repositori dan proyek lainnya.</p>
+            <a href="https://github.com/kyra-14" target="_blank" rel="noopener" class="btn btn-outline">
+              <i class="fab fa-github"></i> GitHub Profile
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Education</span>
+        <h2 class="section-title">Pendidikan</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>SMK Tinta Emas Indonesia</h3>
+                <span class="timeline-subtitle">Teknik Elektronika</span>
+              </div>
+              <span class="timeline-badge current">Aktif</span>
+            </div>
+            <span class="timeline-period"><i class="far fa-calendar"></i> 2022 — Sekarang</span>
+            <p>Mempelajari dasar-dasar teknik elektronika, pemrograman mikrokontroler, desain PCB, IoT, robotika, dan sistem kontrol. Aktif mengikuti berbagai proyek dan lomba elektronika.</p>
+            <div class="timeline-tags">
+              <span>Teknik Elektronika</span>
+              <span>Mikrokontroler</span>
+              <span>IoT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>SMP (Sekolah Menengah Pertama)</h3>
+                <span class="timeline-subtitle">Pendidikan Umum</span>
+              </div>
+              <span class="timeline-badge">Lulus</span>
+            </div>
+            <span class="timeline-period"><i class="far fa-calendar"></i> 2019 — 2022</span>
+            <p>Menyelesaikan pendidikan dasar dengan minat awal di bidang sains dan teknologi.</p>
+            <div class="timeline-tags">
+              <span>IPA</span>
+              <span>Matematika</span>
+              <span>Teknologi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Experience</span>
+        <h2 class="section-title">Pengalaman</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot exp-dot">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Praktik Kerja Industri (PKL)</h3>
+                <span class="timeline-subtitle">Teknisi Elektronika — Perusahaan / Industri</span>
+              </div>
+              <span class="timeline-badge current">Terbaru</span>
+            </div>
+            <span class="timeline-period"><i class="far fa-calendar"></i> 2024</span>
+            <p>Melakukan praktik kerja industri di bidang teknisi elektronika. Mengaplikasikan ilmu yang dipelajari di sekolah dalam lingkungan kerja nyata, termasuk perawatan peralatan elektronik dan troubleshooting.</p>
+            <div class="timeline-tags">
+              <span>Teknisi</span><span>Troubleshooting</span><span>Elektronika</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot exp-dot">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Lomba Robotika Tingkat Sekolah</h3>
+                <span class="timeline-subtitle">Peserta & Finalis</span>
+              </div>
+              <span class="timeline-badge">2023</span>
+            </div>
+            <span class="timeline-period"><i class="far fa-calendar"></i> 2023</span>
+            <p>Berpartisipasi dalam lomba robotika antar kelas, membangun robot line follower dari nol, mulai dari desain mekanik hingga pemrograman.</p>
+            <div class="timeline-tags">
+              <span>Robotika</span><span>Arduino</span><span>Kompetisi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot exp-dot">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Anggota Ekstrakurikuler Robotika</h3>
+                <span class="timeline-subtitle">SMK Tinta Emas Indonesia</span>
+              </div>
+              <span class="timeline-badge">Aktif</span>
+            </div>
+            <span class="timeline-period"><i class="far fa-calendar"></i> 2022 — Sekarang</span>
+            <p>Aktif dalam kegiatan ekstrakurikuler robotika sekolah. Berkontribusi dalam pengembangan proyek robotika bersama tim.</p>
+            <div class="timeline-tags">
+              <span>Tim</span><span>Robotika</span><span>Kolaborasi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section section-alt" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Certifications</span>
+        <h2 class="section-title">Sertifikat &amp; Penghargaan</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6)">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="cert-body">
+            <h3>Arduino Fundamentals</h3>
+            <span class="cert-issuer"><i class="fas fa-award"></i> Arduino Official / Coursera</span>
+            <span class="cert-date"><i class="far fa-calendar"></i> 2023</span>
+            <p>Sertifikasi dasar pemrograman Arduino dan pengembangan sistem embedded.</p>
+          </div>
+          <a href="#" class="cert-link">Lihat Sertifikat <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon" style="background: linear-gradient(135deg, #10b981, #059669)">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="cert-body">
+            <h3>IoT Fundamentals</h3>
+            <span class="cert-issuer"><i class="fas fa-award"></i> Cisco Networking Academy</span>
+            <span class="cert-date"><i class="far fa-calendar"></i> 2023</span>
+            <p>Pemahaman dasar Internet of Things, konektivitas, dan keamanan jaringan IoT.</p>
+          </div>
+          <a href="#" class="cert-link">Lihat Sertifikat <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706)">
+            <i class="fas fa-print"></i>
+          </div>
+          <div class="cert-body">
+            <h3>PCB Design Training</h3>
+            <span class="cert-issuer"><i class="fas fa-award"></i> Pelatihan Internal Sekolah</span>
+            <span class="cert-date"><i class="far fa-calendar"></i> 2024</span>
+            <p>Pelatihan desain PCB menggunakan software KiCad dan Proteus, mulai dari schematic hingga layout.</p>
+          </div>
+          <a href="#" class="cert-link">Lihat Sertifikat <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626)">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="cert-body">
+            <h3>Robotika Dasar</h3>
+            <span class="cert-issuer"><i class="fas fa-award"></i> SMK Tinta Emas Indonesia</span>
+            <span class="cert-date"><i class="far fa-calendar"></i> 2023</span>
+            <p>Sertifikat penyelesaian pelatihan robotika dasar termasuk mekatronik dan pemrograman robot.</p>
+          </div>
+          <a href="#" class="cert-link">Lihat Sertifikat <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon" style="background: linear-gradient(135deg, #3b82f6, #2563eb)">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="cert-body">
+            <h3>Juara Lomba Elektronika</h3>
+            <span class="cert-issuer"><i class="fas fa-award"></i> Kompetisi Internal</span>
+            <span class="cert-date"><i class="far fa-calendar"></i> 2024</span>
+            <p>Penghargaan atas prestasi dalam lomba elektronika tingkat sekolah.</p>
+          </div>
+          <a href="#" class="cert-link">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Contact</span>
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-desc">Punya pertanyaan, ingin berkolaborasi, atau sekadar menyapa? Jangan ragu untuk menghubungi saya! 👋</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-cards">
+          <a href="https://github.com/kyra-14" target="_blank" rel="noopener" class="contact-card glass-card">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #333, #555)">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">github.com/kyra-14</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="contact-card glass-card">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #e1306c, #833ab4)">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Instagram</span>
+              <span class="contact-card-value">@username_instagram</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" class="contact-card glass-card">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #000, #333)">
+              <i class="fab fa-tiktok"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">TikTok</span>
+              <span class="contact-card-value">@username_tiktok</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+
+          <a href="mailto:rizky@kyrawa-company.my.id" class="contact-card glass-card">
+            <div class="contact-card-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6)">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">rizky@kyrawa-company.my.id</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+        </div>
+
+        <div class="contact-form-wrapper glass-card">
+          <h3>Kirim Pesan</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" placeholder="Nama kamu" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@contoh.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" placeholder="Subjek pesan" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>RR<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Rizky Ramadhani — Teknik Elektronika<br/>SMK Tinta Emas Indonesia</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/kyra-14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Rizky Ramadhani. Dibuat dengan <i class="fas fa-heart" style="color: #ef4444"></i> dan ☕</p>
+        <p class="footer-domain">kyrawa-company.my.id</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
