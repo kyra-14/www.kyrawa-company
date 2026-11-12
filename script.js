@@ -211,34 +211,33 @@ backToTop.addEventListener('click', () => {
 
 // ===== CONTACT FORM =====
 const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const name    = document.getElementById('name').value;
+    const email   = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
 
-  const btn = contactForm.querySelector('button[type="submit"]');
-  const name    = document.getElementById('name').value;
-  const email   = document.getElementById('email').value;
-  const subject = document.getElementById('subject').value;
-  const message = document.getElementById('message').value;
+    const mailtoLink = `mailto:rizky@kyrawa-company.my.id?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Halo Rizky,\n\nNama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`)}`;
 
-  // Simple mailto fallback (since this is a static site)
-  const mailtoLink = `mailto:rizky@kyrawa-company.my.id?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Halo Rizky,\n\nNama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`)}`;
+    const originalHTML = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> Pesan Terkirim!';
+    btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+    btn.disabled = true;
 
-  // Show success feedback
-  const originalHTML = btn.innerHTML;
-  btn.innerHTML = '<i class="fas fa-check"></i> Pesan Terkirim!';
-  btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-  btn.disabled = true;
+    window.location.href = mailtoLink;
 
-  window.location.href = mailtoLink;
-
-  setTimeout(() => {
-    btn.innerHTML = originalHTML;
-    btn.style.background = '';
-    btn.disabled = false;
-    contactForm.reset();
-  }, 3000);
-});
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.style.background = '';
+      btn.disabled = false;
+      contactForm.reset();
+    }, 3000);
+  });
+}
 
 // ===== SMOOTH HOVER TILT on project cards =====
 const projectCards = document.querySelectorAll('.project-card:not(.project-card-cta)');

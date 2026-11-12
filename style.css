@@ -1174,9 +1174,11 @@ img {
 }
 
 .contact-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .contact-card {
@@ -1458,8 +1460,45 @@ img {
     grid-template-columns: 1fr 1fr;
   }
 
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 36px;
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+
   .hero-visual {
-    display: none;
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .avatar-wrapper {
+    width: 260px;
+    height: 260px;
+  }
+
+  .ring-1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .ring-2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .avatar-circle {
+    width: 155px;
+    height: 155px;
+  }
+
+  .floating-badge {
+    padding: 6px 10px;
+    font-size: 0.72rem;
   }
 
   .hero-content {
@@ -1525,6 +1564,10 @@ img {
   }
 
   .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cards {
     grid-template-columns: 1fr;
   }
 
