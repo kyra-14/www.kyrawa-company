@@ -269,3 +269,58 @@ if (circuitEl) {
   }, { passive: true });
 }
 
+// ===== PWA SERVICE WORKER & INSTALL PROMPT =====
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then((reg) => {
+        console.log('PWA Service Worker registered successfully:', reg.scope);
+      })
+      .catch((err) => {
+        console.error('Service Worker registration failed:', err);
+      });
+  });
+}
+
+let deferredPrompt;
+const pwaBanner = document.getElementById('pwaBanner');
+const pwaInstallBtn = document.getElementById('pwaInstallBtn');
+const pwaCloseBtn = document.getElementById('pwaCloseBtn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  if (pwaBanner) {
+    pwaBanner.classList.add('active');
+  }
+});
+
+if (pwaInstallBtn) {
+  pwaInstallBtn.addEventListener('click', async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`User response to install prompt: ${outcome}`);
+    deferredPrompt = null;
+    if (pwaBanner) {
+      pwaBanner.classList.remove('active');
+    }
+  });
+}
+
+if (pwaCloseBtn) {
+  pwaCloseBtn.addEventListener('click', () => {
+    if (pwaBanner) {
+      pwaBanner.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('appinstalled', () => {
+  console.log('Rizky Portfolio PWA was installed successfully!');
+  if (pwaBanner) {
+    pwaBanner.classList.remove('active');
+  }
+});
+
+
