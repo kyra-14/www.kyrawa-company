@@ -1,64 +1,45 @@
 # Portfolio Rizky Ramadhani
 
-**Website:** [kyrawa-company.my.id](https://kyrawa-company.my.id)  
-**GitHub Pages:** [kyra-14.github.io](https://kyra-14.github.io)
+**Website Live:** [https://kyra-14.github.io/www.kyrawa-company/](https://kyra-14.github.io/www.kyrawa-company/)
 
-Portfolio website pribadi untuk **Rizky Ramadhani**, Siswa Teknik Elektronika SMK Tinta Emas Indonesia.
+Website portofolio pribadi untuk **Rizky Ramadhani**, Siswa Teknik Elektronika SMK Tinta Emas Indonesia. Berisi dokumentasi proyek perangkat keras (hardware), mikrokontroler, elektronika analog, pengalaman PKL, workshop, dan keahlian teknis.
 
-## 🚀 Fitur
+---
 
-- ✅ **Dark / Light Mode** — toggle otomatis dengan simpan preferensi
-- ✅ **Fully Responsive** — mobile, tablet, desktop
-- ✅ **Typed Text Effect** — animasi teks bergilir di hero
-- ✅ **Skill Bars** — animasi progress bar saat scroll
-- ✅ **Counter Animation** — statistik angka animasi
-- ✅ **Scroll Reveal** — elemen muncul saat di-scroll
-- ✅ **Card Tilt Effect** — efek 3D hover pada project cards
-- ✅ **Contact Form** — form kirim pesan via mailto
-- ✅ **Back to Top Button**
-- ✅ **Siap GitHub Pages** — file CNAME sudah disertakan
+## 🚀 Fitur Utama
+
+- 🌙 **Dark / Light Mode**: Penggantian tema otomatis dan tersimpan di penyimpanan browser.
+- 📱 **Fully Responsive**: Tampilan optimal dan proporsional di PC/Desktop maupun Smartphone/Mobile.
+- ⌨️ **Typed Text Animation**: Efek animasi teks keahlian berganti secara dinamis di Hero section.
+- 📊 **Animated Skill Bars & Counter**: Visualisasi bar keahlian dan angka statistik yang aktif saat di-scroll.
+- 🃏 **3D Card Hover**: Interaktivitas kartu proyek dengan efek kemiringan 3D saat disorot kursor.
+- 🔗 **Direct Social Contact**: Akses langsung satu klik ke GitHub, Instagram, TikTok, dan Email.
+- 🔝 **Back to Top**: Tombol kembali ke atas halaman yang responsif dan mulus.
+
+---
 
 ## 📂 Struktur File
 
 ```
-www.kyra/
-├── index.html      # Halaman utama
-├── style.css       # Semua styling + dark/light mode
-├── script.js       # Interaktivitas & animasi
-├── CNAME           # Custom domain GitHub Pages
-└── README.md       # File ini
+www.kyrawa-company/
+├── index.html      # Halaman utama (Hero, About, Skills, Projects, Education, Experience, Certificates, Contact)
+├── style.css       # Seluruh styling, CSS Variables tema, dan breakpoints responsif
+├── script.js       # Interaktivitas, dark mode toggle, scroll reveal, dan efek animasi
+├── profile.jpg     # Foto profil formal
+└── README.md       # Dokumentasi repositori
 ```
 
-## 🌐 Deploy ke GitHub Pages
+---
 
-1. **Buat repository** di GitHub dengan nama `kyra-14.github.io`
-2. **Upload semua file** (`index.html`, `style.css`, `script.js`, `CNAME`) ke repo
-3. Buka **Settings → Pages** di repo
-4. Set Source: **Deploy from a branch** → branch `main` → folder `/ (root)`
-5. Klik **Save**
-6. Tambahkan custom domain `kyrawa-company.my.id` di kolom Custom Domain
-7. Set DNS record di provider domain:
-   - **CNAME record**: `www` → `kyra-14.github.io`
-   - **A records** (untuk apex domain):
-     - `185.199.108.153`
-     - `185.199.109.153`
-     - `185.199.110.153`
-     - `185.199.111.153`
+## 🛠️ Teknologi yang Digunakan
 
-## ✏️ Hal yang Perlu Diperbarui
+- **HTML5 Semantic**: Struktur semantik modern dan aksesibel
+- **CSS3**: Grid, Flexbox, Custom Properties (Variables), Keyframe Animations
+- **Vanilla JavaScript (ES6+)**: Ringan, cepat, dan tanpa dependensi library eksternal
+- **Font Awesome 6**: Ikonografi teknis dan media sosial
+- **Google Fonts**: Inter & Fira Code
+- **Hosting**: GitHub Pages
 
-- [ ] Ganti `@username_instagram` dengan username Instagram asli
-- [ ] Ganti `@username_tiktok` dengan username TikTok asli
-- [ ] Update link proyek GitHub (href pada project cards)
-- [ ] Upload foto profil dan ganti avatar icon jika diperlukan
-- [ ] Update deskripsi proyek sesuai proyek nyata
-- [ ] Update link sertifikat ke file/gambar asli
+---
 
-## 🛠️ Teknologi
-
-- HTML5 Semantic
-- CSS3 (Custom Properties, Grid, Flexbox, Animations)
-- Vanilla JavaScript (ES6+)
-- Font Awesome 6 Icons
-- Google Fonts (Inter + Fira Code)
-
+&copy; 2024 - 2026 Rizky Ramadhani. All Rights Reserved.
