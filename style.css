@@ -1464,7 +1464,7 @@ img {
     flex-direction: column-reverse;
     justify-content: center;
     gap: 28px;
-    padding-top: 100px;
+    padding-top: 130px;
     padding-bottom: 50px;
   }
 
@@ -1473,7 +1473,7 @@ img {
     transform: none;
     display: flex;
     justify-content: center;
-    margin: 10px auto 0 auto;
+    margin: 20px auto 0 auto;
     width: 100%;
   }
 
@@ -1498,10 +1498,10 @@ img {
     box-shadow: 0 10px 40px rgba(99, 102, 241, 0.35);
   }
 
-  .badge-1 { top: 0; right: 0; }
-  .badge-2 { bottom: 15px; right: -5px; }
-  .badge-3 { bottom: 0; left: 0; }
-  .badge-4 { top: 15px; left: -5px; }
+  .badge-1 { top: 25px; right: -5px; }
+  .badge-2 { bottom: 25px; right: -5px; }
+  .badge-3 { bottom: 15px; left: -5px; }
+  .badge-4 { top: 25px; left: -5px; }
 
   .floating-badge {
     padding: 5px 9px;
@@ -1612,42 +1612,42 @@ img {
 
 @media (max-width: 480px) {
   .hero {
-    padding-top: 85px;
+    padding-top: 120px;
     padding-bottom: 40px;
     gap: 20px;
   }
 
   .avatar-wrapper {
+    width: 210px;
+    height: 210px;
+  }
+
+  .ring-1 {
     width: 200px;
     height: 200px;
   }
 
-  .ring-1 {
-    width: 190px;
-    height: 190px;
-  }
-
   .ring-2 {
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
   }
 
   .avatar-circle {
-    width: 130px;
-    height: 130px;
+    width: 135px;
+    height: 135px;
     border-width: 3px;
   }
 
   .floating-badge {
-    padding: 4px 7px;
+    padding: 4px 8px;
     font-size: 0.65rem;
     border-radius: 8px;
   }
 
-  .badge-1 { top: -4px; right: 4px; }
-  .badge-2 { bottom: 6px; right: -2px; }
-  .badge-3 { bottom: -4px; left: 4px; }
-  .badge-4 { top: 6px; left: -2px; }
+  .badge-1 { top: 18px; right: -8px; }
+  .badge-2 { bottom: 18px; right: -8px; }
+  .badge-3 { bottom: 12px; left: -8px; }
+  .badge-4 { top: 18px; left: -8px; }
 
   .hero-title {
     font-size: 2.2rem;
