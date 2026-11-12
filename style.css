@@ -1463,9 +1463,9 @@ img {
   .hero {
     flex-direction: column-reverse;
     justify-content: center;
-    gap: 36px;
-    padding-top: 130px;
-    padding-bottom: 60px;
+    gap: 28px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .hero-visual {
@@ -1473,31 +1473,38 @@ img {
     transform: none;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin: 10px auto 0 auto;
+    width: 100%;
   }
 
   .avatar-wrapper {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 
   .ring-1 {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
   }
 
   .ring-2 {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
   }
 
   .avatar-circle {
-    width: 155px;
-    height: 155px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.35);
   }
 
+  .badge-1 { top: 0; right: 0; }
+  .badge-2 { bottom: 15px; right: -5px; }
+  .badge-3 { bottom: 0; left: 0; }
+  .badge-4 { top: 15px; left: -5px; }
+
   .floating-badge {
-    padding: 6px 10px;
+    padding: 5px 9px;
     font-size: 0.72rem;
   }
 
@@ -1604,6 +1611,44 @@ img {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 85px;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+
+  .avatar-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ring-1 {
+    width: 190px;
+    height: 190px;
+  }
+
+  .ring-2 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .avatar-circle {
+    width: 130px;
+    height: 130px;
+    border-width: 3px;
+  }
+
+  .floating-badge {
+    padding: 4px 7px;
+    font-size: 0.65rem;
+    border-radius: 8px;
+  }
+
+  .badge-1 { top: -4px; right: 4px; }
+  .badge-2 { bottom: 6px; right: -2px; }
+  .badge-3 { bottom: -4px; left: 4px; }
+  .badge-4 { top: 6px; left: -2px; }
+
   .hero-title {
     font-size: 2.2rem;
   }
