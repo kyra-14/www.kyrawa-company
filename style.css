@@ -1628,29 +1628,45 @@ img {
 
   /* Hero Section Mobile */
   .hero {
-    flex-direction: column-reverse;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    gap: 32px;
-    padding-top: 155px;
+    gap: 20px;
+    padding-top: 100px;
     padding-bottom: 50px;
     min-height: auto;
   }
 
+  /* Foto berada tepat paling atas di mode mobile */
+  .hero-visual {
+    order: 1;
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Konten teks berada di bawah foto */
   .hero-content {
+    order: 2;
     padding-right: 0;
     text-align: center;
     align-items: center;
     width: 100%;
+    gap: 16px;
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
   .hero-subtitle {
     text-align: center;
-    font-size: 0.98rem;
+    font-size: 0.96rem;
   }
 
   .hero-cta {
@@ -1669,16 +1685,6 @@ img {
     gap: 8px;
   }
 
-  .hero-visual {
-    position: static;
-    transform: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto 0 auto;
-    width: 100%;
-  }
-
   .avatar-wrapper {
     width: 220px;
     height: 220px;
@@ -1695,15 +1701,15 @@ img {
   }
 
   .avatar-circle {
-    width: 135px;
-    height: 135px;
+    width: 140px;
+    height: 140px;
     box-shadow: 0 10px 35px rgba(99, 102, 241, 0.35);
   }
 
-  .badge-1 { top: 38px; right: -12px; }
-  .badge-2 { bottom: 25px; right: -12px; }
-  .badge-3 { bottom: 15px; left: -12px; }
-  .badge-4 { top: 38px; left: -12px; }
+  .badge-1 { top: 20px; right: -8px; }
+  .badge-2 { bottom: 20px; right: -8px; }
+  .badge-3 { bottom: 12px; left: -8px; }
+  .badge-4 { top: 20px; left: -8px; }
 
   .floating-badge {
     padding: 5px 9px;
@@ -1818,9 +1824,9 @@ img {
   }
 
   .hero {
-    padding-top: 145px;
-    padding-bottom: 40px;
-    gap: 24px;
+    padding-top: 90px;
+    padding-bottom: 35px;
+    gap: 16px;
   }
 
   .hero-title {
@@ -1830,6 +1836,7 @@ img {
   .hero-badge {
     padding: 6px 12px;
     font-size: 0.78rem;
+    margin-bottom: 2px;
   }
 
   .hero-cta {
@@ -1869,10 +1876,10 @@ img {
     border-radius: 8px;
   }
 
-  .badge-1 { top: 32px; right: -8px; }
-  .badge-2 { bottom: 20px; right: -8px; }
-  .badge-3 { bottom: 12px; left: -8px; }
-  .badge-4 { top: 32px; left: -8px; }
+  .badge-1 { top: 16px; right: -8px; }
+  .badge-2 { bottom: 16px; right: -8px; }
+  .badge-3 { bottom: 10px; left: -8px; }
+  .badge-4 { top: 16px; left: -8px; }
 
   .about-stats {
     gap: 14px;
