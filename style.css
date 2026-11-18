@@ -1631,9 +1631,9 @@ img {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 28px;
-    padding-top: 125px;
-    padding-bottom: 45px;
+    gap: 32px;
+    padding-top: 155px;
+    padding-bottom: 50px;
     min-height: auto;
   }
 
@@ -1645,7 +1645,7 @@ img {
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .hero-subtitle {
@@ -1675,35 +1675,35 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     width: 100%;
   }
 
   .avatar-wrapper {
-    width: 230px;
-    height: 230px;
-  }
-
-  .ring-1 {
     width: 220px;
     height: 220px;
   }
 
+  .ring-1 {
+    width: 210px;
+    height: 210px;
+  }
+
   .ring-2 {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
   }
 
   .avatar-circle {
-    width: 145px;
-    height: 145px;
+    width: 135px;
+    height: 135px;
     box-shadow: 0 10px 35px rgba(99, 102, 241, 0.35);
   }
 
-  .badge-1 { top: 22px; right: -8px; }
-  .badge-2 { bottom: 22px; right: -8px; }
-  .badge-3 { bottom: 12px; left: -8px; }
-  .badge-4 { top: 22px; left: -8px; }
+  .badge-1 { top: 38px; right: -12px; }
+  .badge-2 { bottom: 25px; right: -12px; }
+  .badge-3 { bottom: 15px; left: -12px; }
+  .badge-4 { top: 38px; left: -12px; }
 
   .floating-badge {
     padding: 5px 9px;
@@ -1818,9 +1818,9 @@ img {
   }
 
   .hero {
-    padding-top: 115px;
-    padding-bottom: 35px;
-    gap: 18px;
+    padding-top: 145px;
+    padding-bottom: 40px;
+    gap: 24px;
   }
 
   .hero-title {
@@ -1843,36 +1843,36 @@ img {
   }
 
   .avatar-wrapper {
-    width: 205px;
-    height: 205px;
+    width: 200px;
+    height: 200px;
   }
 
   .ring-1 {
-    width: 195px;
-    height: 195px;
+    width: 190px;
+    height: 190px;
   }
 
   .ring-2 {
-    width: 165px;
-    height: 165px;
+    width: 155px;
+    height: 155px;
   }
 
   .avatar-circle {
-    width: 135px;
-    height: 135px;
+    width: 125px;
+    height: 125px;
     border-width: 3px;
   }
 
   .floating-badge {
-    padding: 4px 8px;
+    padding: 4px 7px;
     font-size: 0.65rem;
     border-radius: 8px;
   }
 
-  .badge-1 { top: 16px; right: -8px; }
-  .badge-2 { bottom: 16px; right: -8px; }
-  .badge-3 { bottom: 10px; left: -8px; }
-  .badge-4 { top: 16px; left: -8px; }
+  .badge-1 { top: 32px; right: -8px; }
+  .badge-2 { bottom: 20px; right: -8px; }
+  .badge-3 { bottom: 12px; left: -8px; }
+  .badge-4 { top: 32px; left: -8px; }
 
   .about-stats {
     gap: 14px;
